@@ -1,0 +1,20 @@
+[project]
+name = "rgb-to-cmyk"
+version = "0.1.0"
+description = "CLI for converting RGB JPEG images to CMYK JPEG with simple or ICC-based conversion"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+	"pillow",
+	"pytest>=9.0.2",
+]
+
+[project.scripts]
+rgb-to-cmyk = "rgb_to_cmyk.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+package = true
