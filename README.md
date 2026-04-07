@@ -2,8 +2,8 @@
 
 RGB カラーモードの JPEG を CMYK JPEG に変換する CLI です。Pillow を使った単純変換と、ICC プロファイルを使う色変換を切り替えられます。
 
-既定では [JapanColor2011Coated/JapanColor2011Coated.icc](JapanColor2011Coated/JapanColor2011Coated.icc) を出力 ICC として使います。
-
+既定では [JapanColor2011Coated/JapanColor2011Coated.icc](JapanColor2011Coated/JapanColor2011Coated.icc) を出力 ICC として使います。ICCファイルは同梱していないので、
+[こちら](https://japancolor.jp/icc.html)からダウンロードして、プロジェクトルートの `JapanColor2011Coated` フォルダ内に置いてください。
 ## Setup
 
 ```bash
